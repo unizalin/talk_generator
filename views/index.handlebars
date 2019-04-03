@@ -1,0 +1,43 @@
+<div class="container py-3">
+  <h2 class="text-center">你對誰想說幹話?</h2>
+  <form action="post" class="py-3" action="/">
+    <div class="row">
+      <div class="card-columns">
+        <div class="card " style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+            class="card-img-top" alt="angry-developer">
+          <div class="form-check text-center mt-3">
+            <input class="form-check-input" type="radio" name="{{option.target}}" id="exampleRadios1" value="developer">
+            <label class="form-check-label" for="exampleRadios1">
+              angry-developer
+            </label>
+          </div>
+        </div>
+        <div class="card " style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+            class="card-img-top" alt="angry-designer">
+          <div class="form-check text-center mt-3">
+            <input class="form-check-input " type="radio" name="{{option.target}}" id="exampleRadios1" value="designer">
+            <label class="form-check-label" for="exampleRadios1">
+              angry-designer </label>
+          </div>
+        </div>
+        <div class="card " style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+            class="card-img-top" alt="angry-founder">
+          <div class="form-check text-center mt-3">
+            <input class="form-check-input" type="radio" name="{{option.target}}" id="exampleRadios1" value="founder">
+            <label class="form-check-label" for="exampleRadios1">
+              angry-founder </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{#if word}}
+    <div class="alert alert-info" role="alert">
+      <span class="mr-2">Your password is:</span> <code>{{word}}</code>
+    </div>
+    {{/if}}
+    <button class="btn btn-success" type="submit">Generate Password</button>
+  </form>
+</div>
